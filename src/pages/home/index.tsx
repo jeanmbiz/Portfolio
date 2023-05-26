@@ -65,18 +65,8 @@ export const Home = (): JSX.Element => {
               <Button as="a" type="primary" href="#projects">
                 See Projects
               </Button>
-              <Button as="a" type="outline" target="_blank" href={portfolioUrl}>
-                See my portfolio source code
-              </Button>
-              <Button
-                color="grey5"
-                as="a"
-                css={{ "&:hover": { color: "$grey1" } }}
-                type="circle"
-                target="_blank"
-                href={gihubUrl}
-              >
-                <FaGithub />
+              <Button as="a" type="outline" target="_blank" href={gihubUrl}>
+                See my GitHub
               </Button>
             </HeaderButtonsArea>
             <StackCards>

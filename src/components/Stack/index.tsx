@@ -14,6 +14,7 @@ export const Stack = (
 ): JSX.Element => {
   const isString = typeof Icon === "string";
 
+  
   return (
     <StackCard className={`${key}`} key={key}>
       <Text>{title}</Text>

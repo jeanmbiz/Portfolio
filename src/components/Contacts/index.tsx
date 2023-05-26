@@ -41,9 +41,15 @@ export const Contacts = () => {
           </motion.div>
           <ContactsCards>
             <ContactCard>
-              <ContactCardImage className="wpp">
-                <FaWhatsapp color="#fff" size={24} />
-              </ContactCardImage>
+              <Text
+                as="a"
+                target="_blank"
+                href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C+tudo+bem%3F+venho+por+meio+do+seu+portf%C3%B3lio.`}
+              >
+                <ContactCardImage className="wpp">
+                  <FaWhatsapp color="#fff" size={24} />
+                </ContactCardImage>
+              </Text>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
                   My Whatsapp
@@ -57,7 +63,7 @@ export const Contacts = () => {
                   color="grey2"
                   type="body2"
                   target="_blank"
-                  href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C%20venho%20por%20meio%20do%20seu%20portf%C3%B3lio%20na%20internet%2C%20gostaria%20de%20conhecer%20melhor%20seus%20servi%C3%A7os`}
+                  href={`https://api.whatsapp.com/send?phone=+55+${userData.whatsappNumber}&text=Ol%C3%A1%2C+tudo+bem%3F+venho+por+meio+do+seu+portf%C3%B3lio.`}
                 >
                   Talk Now
                 </Text>
@@ -65,9 +71,18 @@ export const Contacts = () => {
             </ContactCard>
 
             <ContactCard>
-              <ContactCardImage className="email">
-                <FaEnvelopeOpen color="#fff" size={24} />
-              </ContactCardImage>
+              <Text
+                as="a"
+                target="_blank"
+                href={`mailto=${userData.emailUser}`}
+                onClick={() =>
+                  (window.location.href = "mailto:nekelpatrick.com")
+                }
+              >
+                <ContactCardImage className="email">
+                  <FaEnvelopeOpen color="#fff" size={24} />
+                </ContactCardImage>
+              </Text>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
                   My email
@@ -91,9 +106,11 @@ export const Contacts = () => {
               </ContactCardContent>
             </ContactCard>
             <ContactCard>
-              <ContactCardImage className="linkedin">
-                <FaLinkedin color="#fff" size={24} />
-              </ContactCardImage>
+              <Text as="a" target="_blank" href={linkedInUrl}>
+                <ContactCardImage className="linkedin">
+                  <FaLinkedin color="#fff" size={24} />
+                </ContactCardImage>
+              </Text>
               <ContactCardContent>
                 <Text type="heading4" color="grey4">
                   My LinkedIn
