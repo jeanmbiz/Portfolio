@@ -54,6 +54,7 @@ export const NavBar = (): JSX.Element => {
   );
 };
 
+
 export const NavLinks = (): JSX.Element => {
   return (
     <NavbarLinks>
