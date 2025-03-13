@@ -71,7 +71,7 @@ export const NavLinks = (): JSX.Element => {
         target="_blank"
         as="a"
         color="grey4"
-        href="https://drive.google.com/file/d/19V01ado60C1OxKENnsqMMiJrWtPpI1wS/view?usp=share_link"
+        href="https://drive.google.com/file/d/1cH6b6UdIW2z89fjBP5KkaXdO5JLG03fG/view"
       >
         Curriculum
       </Button>
